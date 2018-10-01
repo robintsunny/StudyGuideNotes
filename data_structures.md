@@ -22,10 +22,10 @@ Weighted: Edges have weight
 Unweighted: Edges don't have weight
 
 ## Give an example of various types of graphs (Weighted Undirected, Unweighted Directed, Unweighted Undirected, etc.)
-Wt-Und: Highways
-Wt-Dir: Real Life Relationships
-Uwt-Und: Facebook
-Uwt-Dir: Twitter
+1. Wt-Und: Highways
+2. Wt-Dir: Real Life Relationships
+3. Uwt-Und: Facebook
+4. Uwt-Dir: Twitter
 
 ## What makes a graph a simple graph? What attributes would make it not simple?
 Unweighted, undirected graph containing no graph loops or multiple edges

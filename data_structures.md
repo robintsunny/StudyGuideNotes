@@ -43,3 +43,20 @@ When Vertices have multiple paths connecting them
 ### What are some naive ways we can store and traverse graphs? Be able to discuss time/space complexity of these approaches, and what issues we may face.
 NxN arrays
 Adjacency arrays
+
+
+## Give a high level overview of an Adjacency Matrix
+A square matrix that denotes whether an edge exists between two nodes
+
+## If we were only concerned about time complexity, is an Adjacency Matrix efficient? Why/why not?
+Yes because to find connections to a single node is O(n) and to find whether an edge exists is O(1)
+
+## If we were only concerned about space complexity, is an Adjacency Matrix efficient? Why/why not?
+No because sparsity takes up more space than needed
+
+## Give a high level overview of an Adjacency List
+An adjacency list is a 2D array that keeps a graph's vertices and edges data through linked lists
+
+
+## What benefits do we get from an Adjacency List?
+Quicker adding and removal of edge data, accounts for sparsity

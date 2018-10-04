@@ -19,13 +19,13 @@ Obj.prototype = { constructor: Obh }
 ### What are the valid values for an object's prototype?
 Either an Object or NULL
 
-## What are the benefits of a Javascript closure?
+### What are the benefits of a Javascript closure?
 Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared
 
-## Formally define a Javascript closure
+### Formally define a Javascript closure
 Variables defined outside the scope of a function that are used in the function
 
-## Give an example of a closure
+### Give an example of a closure
 ```js
 function SpringfieldSchool() {
   let staff = ['Seymour Skinner', 'Edna Krabappel'];
@@ -47,3 +47,10 @@ elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Ma
 
 ## What is data encapsulation?
 the idea that some data or functions should not be directly exposed, it's hidden in the closure
+
+
+### What is the difference between the memory heap and call stack in javascript?
+The heap is for memory allocation. The call stack is a list of things to do, one task at a time
+
+### What is one problem with programming languages that a fully single-threaded
+It can only sun one thing at a time which can cause slowing

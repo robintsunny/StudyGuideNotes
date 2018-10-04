@@ -69,3 +69,10 @@ Take first node and add it to a stack, then add one of its connected nodes to th
 ### What supporting data structure might you use for BFS and DFS, respectively?
 BFS: Queue
 DFS: Stack
+
+### What are the steps for BFS on a graph?
+1. Take the first node, add it to a queue
+2. Add all of the first node's connected nodes and add them to the queue
+3. Dequeue the first node and move to the next node
+4. Repeat enqueuing of all the next node's connected nodes
+5. Repeat dequeue and enqueue until all nodes are visited

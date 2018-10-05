@@ -18,3 +18,13 @@ Identification of Resources, manipulation of resources through representations
 4. The browser sends an HTTP request to the web server
 5. The server handles the request and sends back a response
 6. The browser displays the HTML content
+
+
+### Why do we need a DNS?
+It links websites strings to their corresponding IP address
+
+
+### Explain TCP, and why it is a necessary protocol
+Transmission Control Protocol is a way to make sure every piece of data you requested is accounted for before being given to you computer. it ensures that all data is sent for a more reliable experience
+
+App => Transport => Internet =>

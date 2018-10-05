@@ -54,3 +54,32 @@ The heap is for memory allocation. The call stack is a list of things to do, one
 
 ### What is one problem with programming languages that a fully single-threaded
 It can only sun one thing at a time which can cause slowing
+
+###  Is Javascript a single-threaded language? Explain (Hint: This may not be a yes or no question)
+JS by itself is single-threaded, but HTML5 and Node have access to multi-threading behavior
+
+### When is using an IIFE necessary?
+An Immediate Invoked Function Expression (IIFE) is a function expression that is called immediately after you define it. It is usually used when you want to create a new variable scope.
+
+### What is the syntax for an IIFE?
+The (surrounding parenthesis) prevents from treating it as a function declaration.
+The final parenthesis() are executing the function expression.
+
+``` js
+
+var result = [];
+for (var i=0; i < 5; i++) {
+  result.push( function() { return i } );
+}
+console.log( result[1]() ); // 5
+console.log( result[3]() ); // 5
+result = [];
+for (var i=0; i < 5; i++) {
+  (function () {
+    var j = i; // copy current value of i
+    result.push( function() { return j } );
+  })();
+}
+console.log( result[1]() ); // 1
+console.log( result[3]() ); // 3
+```

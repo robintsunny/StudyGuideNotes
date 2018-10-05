@@ -76,3 +76,14 @@ DFS: Stack
 3. Dequeue the first node and move to the next node
 4. Repeat enqueuing of all the next node's connected nodes
 5. Repeat dequeue and enqueue until all nodes are visited
+
+### Give an example of a use-case for Topological Sort
+Installing file packages with dependencies
+
+### What is a difference between Topological Sort and DFS?
+Topological sort prints out vertices in an order where no vertices come before their parent. DFS prints out one node's descendant nodes in succession with no regard to other nodes
+
+### On which types of Graphs can we do a topological sort?
+
+
+### What data structure do we use to assist with the topological sort algorithm?

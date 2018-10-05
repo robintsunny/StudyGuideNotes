@@ -14,5 +14,23 @@ Media queries extend the usefulness of media types by allowing more precise labe
 designing for mobile before designing for desktop or any other device
 
 ### In which order do the React Lifecycle methods (including the optional ones) run?
- In which lyfecycle methods should you make asynchronous fetches for data?
- In which lyfecycle methods can you call setState?
+componentWillMount
+componentDidMount
+componentWillReceiveProps
+shouldComponentUpdate
+componentWillUpdate
+componentDidUpdate
+componentWillUnmount
+
+
+### In which lyfecycle methods should you make asynchronous fetches for data?
+componentDidMount
+
+### In which lyfecycle methods can you call setState?
+componentDidMount
+componentWillReceiveProps
+componentDidUpdate
+
+
+### Give one explanation for why we have to make AJAX requests in componentDidMount
+You can’t guarantee the AJAX request won’t resolve before the component mounts. If it did, that would mean that you’d be trying to setState on an unmounted component, which not only won’t work, but React will yell at you for. Doing AJAX in componentDidMount will guarantee that there’s a component to update.

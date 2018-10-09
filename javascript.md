@@ -66,7 +66,6 @@ The (surrounding parenthesis) prevents from treating it as a function declaratio
 The final parenthesis() are executing the function expression.
 
 ``` js
-
 var result = [];
 for (var i=0; i < 5; i++) {
   result.push( function() { return i } );
@@ -83,3 +82,12 @@ for (var i=0; i < 5; i++) {
 console.log( result[1]() ); // 1
 console.log( result[3]() ); // 3
 ```
+
+
+### In which phase does hoisting occur?
+Compilation phase
+
+### What is the difference between function hoisting and variable hoisting?
+Function declarations are completely hoisted. This means that a declared function can be called before it is defined.
+
+Variables are partially hoisted. var declarations are hoisted but not its assignments. let and const are not hoisted.

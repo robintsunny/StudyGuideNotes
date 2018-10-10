@@ -49,3 +49,9 @@ On the opposite, impure functions may call the database or the network, they may
 ### Describe in detail what a redux reducer is. What makes it a pure function?
 A Reducer is a pure function that describes state mutations by taking the previous state of the app, the action being dispatched, and returns the next state of the app. 
 A Reducer does not modify the state given to it. It has to be pure, so it has to return a new object.
+
+### What is the role of the store in Redux?
+It holds current application state, dispatch actions, and uses reducers to update the state
+
+### What does the subscribe method do in Redux?
+It lets you register a callback that the Redux store will call any time an action has been dispatched, so that you can update the UI of your application. It will reflect the current application state.

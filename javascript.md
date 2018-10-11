@@ -100,3 +100,15 @@ Variables are partially hoisted. var declarations are hoisted but not its assign
 
 ### What type of function is invoked with the new keyword? What does this function return?
 Constructor Functions, returns an object
+
+
+
+### How can you stop event bubbling?
+event.stopPropagation()
+
+### What is the difference between event.target and event.currentTarget?
+event.target – the deepest element that originated the event.
+event.currentTarget (=this) – the current element that handles the event (the one that has the handler on it)
+
+### What does stopImmediatePropagation do?
+stops the bubbling and prevent handlers on the current element from running

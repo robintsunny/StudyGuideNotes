@@ -21,3 +21,11 @@ ADV: Recursion provides a clean and simple way to write code. Some problems are 
 
 ### How is memory allocated during recursive function calls?
 A recursive function calls itself, the memory for called function is allocated on top of memory allocated to calling function and different copy of local variables is created for each function call. When the base case is reached, the function returns its value to the function by whom it is called and memory is de-allocated and the process continues.
+
+
+### What is the difference between Memoization and Tabulation?
+Memoization is building a lookup table for recursion form the top up, while tabulation builds from the bottom up
+
+
+### Why is memoization helpful?
+it helps cut time with recursive calls by using a look up table

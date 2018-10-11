@@ -47,3 +47,7 @@ Establishes a tunnel to the server identified by a given URI.
 Describes the communication options for the target resource.
 8.	TRACE
 Performs a message loop-back test along the path to the target resource.
+
+### What is the difference between HTTP and HTTPS
+HTTP has the ability to fall to a Man in the Middle Attack, HTTPS is a bit more secure
+

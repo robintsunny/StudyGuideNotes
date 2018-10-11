@@ -1,3 +1,5 @@
+# ALGORITHMS
+
 ## RECURSION
 
 ### What is a base case in recursion? Why do we need one? Do we always need one?
@@ -24,8 +26,14 @@ A recursive function calls itself, the memory for called function is allocated o
 
 
 ### What is the difference between Memoization and Tabulation?
-Memoization is building a lookup table for recursion form the top up, while tabulation builds from the bottom up
+Memoization is building a lookup table for recursion form the top up, while tabulation builds from the bottom up. Memoization builds a table as calls are made, while tabulation builds a table before calls are made.
 
 
 ### Why is memoization helpful?
 it helps cut time with recursive calls by using a look up table
+
+
+## DYNAMIC PROGRAMMING
+
+### What is an optimal substructure? When might a problem have one?
+A given problem has Optimal Substructure Property if optimal solution of the given problem can be obtained by using optimal solutions of its subproblems, such as shortest distance between 2 nodes with a node in between

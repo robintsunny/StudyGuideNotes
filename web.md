@@ -51,3 +51,12 @@ Performs a message loop-back test along the path to the target resource.
 ### What is the difference between HTTP and HTTPS
 HTTP has the ability to fall to a Man in the Middle Attack, HTTPS is a bit more secure
 
+
+### What is the difference between localStorage and sessionStorage?
+localStorage persists data after the browser is closed and sessionStorage does not
+
+### Why is it important that users cannot modify their cookies?
+They contain authentication information so if users change that info, they server thinks they are someone else
+
+### When are cookies sent to the server?
+All cookies valid for a page are sent from the browser to the server for every request to the same domain - this includes the original page request, any subsequent Ajax requests, all images, stylesheets, scripts, and fonts

@@ -112,3 +112,6 @@ event.currentTarget (=this) – the current element that handles the event (the 
 
 ### What does stopImmediatePropagation do?
 stops the bubbling and prevent handlers on the current element from running
+
+### What is event delegation?
+Event Delegation is using an event handler on the parent of several children to enact the same action on the children, instead of using individual event handlers

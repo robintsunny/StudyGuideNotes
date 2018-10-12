@@ -115,3 +115,10 @@ stops the bubbling and prevent handlers on the current element from running
 
 ### What is event delegation?
 Event Delegation is using an event handler on the parent of several children to enact the same action on the children, instead of using individual event handlers
+
+
+### Discuss 4 differences between ES5 and ES6 that you find important
+Block Scope: ES5 only had function level scoping, ES6 gives you block level with let and const
+Arrow Funtions: gives you lexical "this"
+Rest Parameters: lets you array functions on arguments
+Classes: helps translate to other OOP languages

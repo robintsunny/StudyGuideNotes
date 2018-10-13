@@ -122,3 +122,13 @@ Block Scope: ES5 only had function level scoping, ES6 gives you block level with
 Arrow Funtions: gives you lexical "this"
 Rest Parameters: lets you array functions on arguments
 Classes: helps translate to other OOP languages
+
+
+### What are the steps of a try..catch block in Javascript?
+The code in TRY is run. IF there are no errors, CATCH is ignored. If an error does occur, ignore the rest of TRY and go to CATCH
+
+### What type of errors do try..catch blocks work for?
+only Runtime Errors
+
+### When creating a custom error, what attributes should it have?
+Message, Name, Stack

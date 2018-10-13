@@ -60,3 +60,14 @@ They contain authentication information so if users change that info, they serve
 
 ### When are cookies sent to the server?
 All cookies valid for a page are sent from the browser to the server for every request to the same domain - this includes the original page request, any subsequent Ajax requests, all images, stylesheets, scripts, and fonts
+
+
+### What is the danger of an XSS
+Cross-site Scripting (XSS) refers to client-side code injection attack wherein an attacker can execute malicious scripts (also commonly referred to as a malicious payload) into a legitimate website or web application. XSS is amongst the most rampant of web application vulnerabilities and occurs when a web application makes use of unvalidated or unencoded user input within the output it generates.
+
+
+### What is a CSRF Attack?
+An attack whereby a malicious entity tricks a victim into performing actions on behalf of the attacker in two parts. The first part is to trick the victim into clicking a link or loading up a page. This is normally done through social engineering which works exceptionally well into leveraging a victim’s curiosity to click on malicious links. The second part is to send a crafted request in the victim’s browser, that will send a legitimate looking request to the web application. The request will be sent with the values that the attacker wants, including any Cookies that the victim has associated with that website. This way, the web application knows that this victim can perform certain actions on the website and any request sent with these HTTP credentials or Cookies, will be considered as legitimate, even though the victim would be sending the request on the attacker’s command.
+
+### How can you prevent CSRF Vulnerabilities?
+Synchronizer Tokens, Same Site Cookies

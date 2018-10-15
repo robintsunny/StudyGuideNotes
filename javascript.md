@@ -14,7 +14,7 @@ DONT: The default "prototype" is an object with the only property constructor th
 DO: if we replace the default prototype as a whole, then there will be no "constructor" in it
 
 ### What is an object's default prototype?
-Obj.prototype = { constructor: Obh }
+Obj.prototype = { constructor: Obj }
 
 ### What are the valid values for an object's prototype?
 Either an Object or NULL
@@ -132,3 +132,12 @@ only Runtime Errors
 
 ### When creating a custom error, what attributes should it have?
 Message, Name, Stack
+
+### Select the correct statement(s) about the new keyword
+B) It returns a new object, even if the function doesn't create one
+D) It sets a prototype on the object it returns
+E) It sets the context of this within the function to the new object that the function will return
+
+### What's the difference between the DOMContentLoaded and load event triggers?
+DOMContentLoaded – the browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.
+load – the browser loaded all resources (images, styles etc).

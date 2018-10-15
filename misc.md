@@ -58,3 +58,10 @@ It lets you register a callback that the Redux store will call any time an actio
 
 ###  What are presentational components?
 Components that don't specify any behaviors, and that are only concerned with how things look or how they render
+
+### Select the correct statement(s) about Redux
+B) Reducers can call other reducers**
+E) functions that are subscribed to the store will fire when the store is changed
+G) Object.assign overwrites properties in order of how its arguments are received, even when the first object has those properties
+H) combineReducers is shorthand syntax that defines the slices of state and which reducers to pass these slices to
+K) The purpose of a container component is to subscribe to the store and to calculate the props that will be passed to the presentational component

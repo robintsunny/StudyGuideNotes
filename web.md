@@ -5,8 +5,7 @@
 Client-Server, Stateless, Uniform Interface
 
 ### What sub-constraints make up a Uniform Interface
-Identification of Resources, manipulation of resources through representations
-, self-descriptive messageshypermedia, hypermedia
+Identification of Resources, manipulation of resources through representations, self-descriptive messageshypermedia, hypermedia
 
 ### Walk through an arbitrary example of a RESTful request/response cycle, and describe what makes it RESTful
 
@@ -71,3 +70,20 @@ An attack whereby a malicious entity tricks a victim into performing actions on 
 
 ### How can you prevent CSRF Vulnerabilities?
 Synchronizer Tokens, Same Site Cookies
+
+### Select the correct statement(s) about HTTP methods and status codes
+D) A 201 code could be what you should expect when you create a valid blog post
+E) A 301 code could indicate that the data cached in your browser already matches what would be returned by your request
+
+### Select the correct statement(s) about HTTP methods
+A) POST requests cannot be bookmarked
+B) GET requests can contain a body, but you should not expect it to have meaning to what is returned
+C) PATCH requests are interpreted to replace only the specified fields
+D) PUT requests that omit a field will update the resource b setting that field to null
+
+### Choose the correct statement(s) about HTTPS
+A) Successful Man in the Middle attacks can alter the request you are sending without your knowledge
+D) Asymmetric Key exchange usually relies on a Certificate Authority to certify public keys
+
+### What is an XMLHttpRequest?
+an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. The XMLHttpRequest object can be used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.

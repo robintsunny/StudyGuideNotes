@@ -16,7 +16,7 @@ Adjacency Linked Lists
 G = (V,E)
 
 ### What is the difference between directed, undirected, weighted, and unweighted?
-*Directed: one-way flow
+Directed: one-way flow
 Unidirected: two-way flow
 Weighted: Edges have weight
 Unweighted: Edges don't have weight
@@ -87,3 +87,18 @@ Topological sort prints out vertices in an order where no vertices come before t
 
 
 ### What data structure do we use to assist with the topological sort algorithm?
+
+
+
+### What are the constraints of (any type of) Heap?
+all of its nodes are in a specific order and the tree must be complete
+
+### What type of Data Structure might we use to implement a heap?
+Priority Queue
+
+### What is the formula for getting the left child of a Heap root node? Right child?
+left_i = 2*parent_i+1
+right_i = 2*parent_i+2
+
+### What is a Priority Queue?
+a Queue where every element/node has a priority associated with it. Items with higher priorities are dequeued before lower priorities and elements with the same priority are deqeueud by age

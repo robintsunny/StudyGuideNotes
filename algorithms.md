@@ -32,8 +32,21 @@ Memoization is building a lookup table for recursion form the top up, while tabu
 ### Why is memoization helpful?
 it helps cut time with recursive calls by using a look up table
 
+### Select the correct statement(s) about recursion
+Tail recursion requires that you don't use any variables in the last line of the code unless you are passing them as arguments to the recursive call
+
+
+### Which statement(s) about recursion and iteration is/are correct?
+A) Recursion is more suited to functional programming because you can more easily create stateless methods
+D) Any recursive problem can be done iteratively
 
 ## DYNAMIC PROGRAMMING
 
 ### What is an optimal substructure? When might a problem have one?
 A given problem has Optimal Substructure Property if optimal solution of the given problem can be obtained by using optimal solutions of its subproblems, such as shortest distance between 2 nodes with a node in between
+
+### Choose the correct statement(s) about Dynamic Programming
+A) Tabulation will create a complete record of subsolutions from the Bottom-up
+
+### Choose the correct statement(s) about event bubbling
+D) Event delegation is useful when you might be dynamically adding children to a parent and you need to execute an action on the child

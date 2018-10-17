@@ -72,3 +72,6 @@ Context provides a way to pass data through the component tree without having to
 
 ### What does the <Provider> component do?
 All Consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes. 
+
+### In which order does SQL execute its queries? Make sure to mention SELECT, JOIN, WHERE, and aggregate functions such as GROUP BY
+FROM => JOIN => GROUP BY => HAVING => SELECT => DISTINCT => ORDER BY => LIMIT/OFFSET

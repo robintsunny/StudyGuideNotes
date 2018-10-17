@@ -50,3 +50,12 @@ A) Tabulation will create a complete record of subsolutions from the Bottom-up
 
 ### Choose the correct statement(s) about event bubbling
 D) Event delegation is useful when you might be dynamically adding children to a parent and you need to execute an action on the child
+
+
+## MERGE SORT
+
+### Explain the pseudocode for Merge Sort
+Sort a collection by breaking it into halves. Then sort those two halves and then merge them together to form one completely sorted collection.
+
+### What is the runtime of merge sort?
+Θ(n·log(n))

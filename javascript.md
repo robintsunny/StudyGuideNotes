@@ -146,3 +146,16 @@ load – the browser loaded all resources (images, styles etc).
 let and const are block scoped, var is not
 let can be changed, const can only change its properties
 let and const are not hoisted, var declarations are hoisted but not their assignment
+
+
+### What happens when you enable strict mode in javascript?
+You cannot create variables/functions without declaring them first, you cannot delete a variable/function once declared and assigned, 
+
+### How does the rest/spread operator work in JS?
+Rest (...args) can be passed into a function as a variable that accepts any number of arguments
+function showName(firstName, lastName, ...titles)
+
+Spread (...arr) takes an array and lists the elements as individual arguments
+let arr1 = [1, -2, 3, 4];
+let arr2 = [8, 3, -8, 1];
+Math.max(...arr1, ...arr2) 

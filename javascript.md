@@ -141,3 +141,8 @@ E) It sets the context of this within the function to the new object that the fu
 ### What's the difference between the DOMContentLoaded and load event triggers?
 DOMContentLoaded – the browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.
 load – the browser loaded all resources (images, styles etc).
+
+### Discuss the differences between let, const, and var. What are their respective scopings?
+let and const are block scoped, var is not
+let can be changed, const can only change its properties
+let and const are not hoisted, var declarations are hoisted but not their assignment

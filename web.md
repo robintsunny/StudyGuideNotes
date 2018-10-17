@@ -87,3 +87,13 @@ D) Asymmetric Key exchange usually relies on a Certificate Authority to certify 
 
 ### What is an XMLHttpRequest?
 an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. The XMLHttpRequest object can be used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+
+### When are two pages considered to have the same origin?
+Two pages have the same origin if the protocol, port (if one is specified), and host are the same for both pages
+
+### How might you allow cross-origin resource sharing?
+HTTP Request Headers
+
+### What is CORS?
+Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin (domain) have permission to access selected resources from a server at a different origin. A web application makes a cross-origin HTTP request when it requests a resource that has a different origin (domain, protocol, and port) than its own origin.

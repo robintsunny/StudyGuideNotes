@@ -65,3 +65,10 @@ E) functions that are subscribed to the store will fire when the store is change
 G) Object.assign overwrites properties in order of how its arguments are received, even when the first object has those properties
 H) combineReducers is shorthand syntax that defines the slices of state and which reducers to pass these slices to
 K) The purpose of a container component is to subscribe to the store and to calculate the props that will be passed to the presentational component
+
+
+### Explain Context in React
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+### What does the <Provider> component do?
+All Consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes. 

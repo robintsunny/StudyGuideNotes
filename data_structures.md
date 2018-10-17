@@ -102,3 +102,11 @@ right_i = 2*parent_i+2
 
 ### What is a Priority Queue?
 a Queue where every element/node has a priority associated with it. Items with higher priorities are dequeued before lower priorities and elements with the same priority are deqeueud by age
+
+### What is the time-complexity of Heap Sort?
+O(n log(n))
+
+### What are the steps for Heap Sort?
+1. Make a max/min heap with an array
+2. Swap the last node (A-node) and the root (B-node) in an array
+3. Re-heap and repeate for the array but decrement the length by 1

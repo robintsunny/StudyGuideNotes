@@ -102,3 +102,10 @@ Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP he
 SQL - columns and rows, relational data but can't handle huge scales
 
 NoSQL - can handle huge scales, but needs to be constructed by experts
+
+
+### What are the different type of SQL Joins?
+Inner, Left, Right, Full
+
+### What is the difference between an Inner Join and a Left Join
+For two tables A and B, a left join is all the data from one table regardless of join condition and data from another table if that data meets a join condition.  Inner join is data form both table that meets a join condition

@@ -159,3 +159,13 @@ Spread (...arr) takes an array and lists the elements as individual arguments
 let arr1 = [1, -2, 3, 4];
 let arr2 = [8, 3, -8, 1];
 Math.max(...arr1, ...arr2) 
+
+
+### What problem does bind solve in Javascript? How does it accomplish this?
+Losing "this"; bind returns a “bound variant” of function func that fixes the context this and first arguments if given.
+
+Usually we apply bind to fix this in an object method, so that we can pass it somewhere.
+
+
+### What is the syntax for passing arguments to the bind function?
+function.bind(context)

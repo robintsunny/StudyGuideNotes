@@ -59,3 +59,12 @@ Sort a collection by breaking it into halves. Then sort those two halves and the
 
 ### What is the runtime of merge sort?
 Θ(n·log(n))
+
+
+## COUNTING SORT
+
+### What are the steps for Counting Sort? What is the time complexity?
+1. Take an arrayA and iterate through the elements. 
+2. In a new arrayB, store how many times an element occurs in arrayA in the index of arrayB
+3. Shift a 0 and pop the last element from arrayB
+4. ArrayB has the starting positions of the sorted elements in a new ArrayC

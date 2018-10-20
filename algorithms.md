@@ -68,3 +68,24 @@ Sort a collection by breaking it into halves. Then sort those two halves and the
 2. In a new arrayB, store how many times an element occurs in arrayA in the index of arrayB
 3. Shift a 0 and pop the last element from arrayB
 4. ArrayB has the starting positions of the sorted elements in a new ArrayC
+
+
+## BUBBLE SORT
+
+### What is the time complexity of Bubble Sort? What are the steps for this algorithm?
+O(n^2), iterate over elements and swap if element to the right is less than current element. Repeate over array until sorted
+
+
+### Describe when it may be ideal to utilize Bubble Sort
+finding the greatest or smallest k elements
+
+
+## RADIX SORT
+
+### What is the time complexity of Radix Sort? What are the steps for this algorithm?
+Let there be d digits in input integers. Radix Sort takes O(d*(n+b)) time where b is the base for representing numbers, for example, for decimal system, b is 10.
+
+steps are to sort numbers by the 1's digit, then 10's, then 100's, etc
+
+### What is an ideal use-case for Radix Sort?
+Sorting for elements between 1 and n^2

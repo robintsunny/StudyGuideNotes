@@ -75,3 +75,15 @@ All Consumers that are descendants of a Provider will re-render whenever the Pro
 
 ### In which order does SQL execute its queries? Make sure to mention SELECT, JOIN, WHERE, and aggregate functions such as GROUP BY
 FROM => JOIN => GROUP BY => HAVING => SELECT => DISTINCT => ORDER BY => LIMIT/OFFSET
+
+### Where in a SQL query may we use a sub query (After which SQL keyword) 
+after FROM
+
+ What is Moore's Law?
+
+ 
+### Describe the effects of using Group By and Having
+ A group by is a query that takes a table and summarizes it into another table. You summarize the original table by grouping the original table into subsets (based upon the attributes that you specify in the group by). Each of these groups will yield one tuple.
+
+The Having is simply equivalent to a WHERE clause after the group by has executed and before the select part of the query is computed.
+

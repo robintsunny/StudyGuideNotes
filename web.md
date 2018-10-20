@@ -109,3 +109,15 @@ Inner, Left, Right, Full
 
 ### What is the difference between an Inner Join and a Left Join
 For two tables A and B, a left join is all the data from one table regardless of join condition and data from another table if that data meets a join condition.  Inner join is data form both table that meets a join condition
+
+### What are the issues one may face when scaling horizontally?
+Horizontal scaling means that you scale by adding more machines into your pool of resources; issues include whether the licensing costs for those additional servers, the additional operations cost of powering and cooling and the large footprint they will occupy in the data center
+
+### What is Vertical Scaling?
+Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+### What is a Load Balancer?
+A blackbox that balance client requests with multiple servers to keep service time down
+
+### What are some exampels of Horizontal Scaling?
+Buying more lower tech servers, shared db's, load balancing

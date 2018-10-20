@@ -169,3 +169,31 @@ Usually we apply bind to fix this in an object method, so that we can pass it so
 
 ### What is the syntax for passing arguments to the bind function?
 function.bind(context)
+
+### What does the length attribute refer to on a Function in Javascript?
+returns the number of function parameters
+``` js
+function f1(a) {}
+function f2(a, b) {}
+function many(a, b, ...more) {}
+
+alert(f1.length); // 1
+alert(f2.length); // 2
+alert(many.length); // 2, rest not included
+```
+
+
+### Explain the differences between a Function Expression and Function Declaration
+A Function Expression is created when the execution reaches it and is usable from then on — it is not hoisted.
+```js
+var sum = function(a, b) {
+  return a + b;
+}
+```
+
+A Function Declaration can be called both before and after it was defined — it is hoisted.
+``` js
+function sum(a, b) {
+  return a + b;
+}
+```

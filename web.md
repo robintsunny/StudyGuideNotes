@@ -121,3 +121,16 @@ A blackbox that balance client requests with multiple servers to keep service ti
 
 ### What are some exampels of Horizontal Scaling?
 Buying more lower tech servers, shared db's, load balancing
+
+<!-- WEEK 4 -->
+### What is Round Robin DNS binding?
+a load balance technique where 1 user will request a website and will get one ip address, a second user will request the same website but get a different server, and so on until N servers and then requests are sent to the first server again
+
+### What issue arises regarding sessions when implementing a Load Balancer?
+If you are switched to a different server during your session, then your two sessions will have different session tokens or cookies and information will be mismatched
+
+### What is striping when talking about writing to a Hard drive?
+Striping is writing portions of data across multiple harddrives to increase write speed
+
+### What is RAID and what functionality can it give you?
+Redudant Array of Independent Discs, using multiple harddrives to strip data across them or mirror data. It helps recover data if a harddrive fails

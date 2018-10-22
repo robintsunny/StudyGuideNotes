@@ -74,16 +74,22 @@ Context provides a way to pass data through the component tree without having to
 All Consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes. 
 
 ### In which order does SQL execute its queries? Make sure to mention SELECT, JOIN, WHERE, and aggregate functions such as GROUP BY
-FROM => JOIN => GROUP BY => HAVING => SELECT => DISTINCT => ORDER BY => LIMIT/OFFSET
+SELECT => FROM => JOIN => GROUP BY => HAVING => SELECT => DISTINCT => ORDER BY => LIMIT/OFFSET
 
 ### Where in a SQL query may we use a sub query (After which SQL keyword) 
 after FROM
 
  What is Moore's Law?
 
- 
+
 ### Describe the effects of using Group By and Having
  A group by is a query that takes a table and summarizes it into another table. You summarize the original table by grouping the original table into subsets (based upon the attributes that you specify in the group by). Each of these groups will yield one tuple.
 
 The Having is simply equivalent to a WHERE clause after the group by has executed and before the select part of the query is computed.
 
+<!-- WEEK 4 -->
+### What is a symbol when talking about transmitting data?
+States of voltage to represent information (binary )
+
+### How is information transmitted over wireless signal?
+Radio waves by varying voltage at a high frequency are sent from an antenna and a receiver picks up the radio waves and converts it back to a signal

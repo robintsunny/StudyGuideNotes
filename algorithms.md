@@ -89,3 +89,15 @@ steps are to sort numbers by the 1's digit, then 10's, then 100's, etc
 
 ### What is an ideal use-case for Radix Sort?
 Sorting for elements between 1 and n^2
+
+
+<!-- WEEK 4 -->
+## BINARY SEARCH TREE
+
+### What are the constraints of a Binary Search Tree?
+A node's left value must be less than the first node's
+A node's right value must be greater than the first node's
+Must be balanced
+
+### What is the big O lookup time for a value in a binary search tree?
+o(log(n))

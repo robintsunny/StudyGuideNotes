@@ -197,3 +197,9 @@ function sum(a, b) {
   return a + b;
 }
 ```
+
+
+<!-- WEEK 4 -->
+
+### Does JS assign variables by value or by reference?
+for primitives, JS stores by value. for objects and functions, JS stores by reference

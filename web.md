@@ -134,3 +134,12 @@ Striping is writing portions of data across multiple harddrives to increase writ
 
 ### What is RAID and what functionality can it give you?
 Redudant Array of Independent Discs, using multiple harddrives to strip data across them or mirror data. It helps recover data if a harddrive fails
+
+### How can you solve the sticky-session issue without shared file storage on the back-end?
+A load balancer can insert a cookie to send a user to the correct server
+ 
+### Explain why you might want to compile and store static HTML pages for something like a Craigslist post.
+It can increase performance tie by reducing server requests
+ 
+### What does using 'memcache' do for you?
+Stores data in RAM so that data can be pulled from RAM rather than the database

@@ -203,3 +203,9 @@ function sum(a, b) {
 
 ### Does JS assign variables by value or by reference?
 for primitives, JS stores by value. for objects and functions, JS stores by reference
+
+### What are the 7 different JS types?
+as of ES6: null, undefined , boolean, number, string, object and symbol
+
+### Explain the difference between + and -*/ in JS when it comes to coercion.
++ can be used for math and coercion, -*/ can only be used for math operations

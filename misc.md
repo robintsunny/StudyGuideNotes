@@ -93,3 +93,15 @@ States of voltage to represent information (binary )
 
 ### How is information transmitted over wireless signal?
 Radio waves by varying voltage at a high frequency are sent from an antenna and a receiver picks up the radio waves and converts it back to a signal
+
+### How do two computers ensure that the signal that is sent between them is interpreted correctly?
+There is a data signal being synced with a clock to ensure proper reading
+
+### What happens when the clocks become unsynchronized?
+A clock slip, information goes missing or more information is added
+
+### How do computers synchronize their clocks?
+GPS Antenna with atomic clocks
+
+### What is manchester coding?
+It's a way to send information through voltage changes rather than syncing absolute voltages with time 

@@ -113,3 +113,16 @@ O(n log(n))
 
 
 <!-- WEEK 4 -->
+## BINARY SEARCH TREE
+
+### What are the constraints of a Binary Search Tree?
+the left node of a given node must be less than the given node, and the right node must be greater, and balance trees
+
+### What is the big O lookup time for a value in a binary search tree?
+O(log(n))
+
+### How can you find the maximum depth of a BST?
+Recursively, pass a node into the function and find the height of the left and right subtree. If a node has no value (the parent has no child node), return 0. Find the max height between the two subtrees and add 1, then go back a level and repeat.
+
+### How can you determine what the Least common ancestor of two nodes is?
+recursively, a function takes in a root node and 2 values. if the root node is null, return null. if the root node is equal to either of the values, return he node. otherwise, recursively call the function on node.left with the 2 values and node.right with the 2 values.  if the left and right of a node return values, that node is the ancestor. if the right ad left return null, return null. if a right and left are returned and one of them is null, then return the non-null value.

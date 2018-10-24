@@ -105,3 +105,12 @@ GPS Antenna with atomic clocks
 
 ### What is manchester coding?
 It's a way to send information through voltage changes rather than syncing absolute voltages with time 
+
+### What is framing?
+a sequence of 1' and 0's that alert the receiver when a series of 1/0's should be considered data 
+
+### What is a frame delimiter?
+after an alternating series of 1 and 0, the frame delimiter is a 10101011 sequence that signals the next byte is the start of data 
+
+### What is bit stuffing?
+adding extra 1's or 0's to signify that a particular sequence is not a flag for something else

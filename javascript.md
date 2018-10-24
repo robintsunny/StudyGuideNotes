@@ -209,3 +209,6 @@ as of ES6: null, undefined , boolean, number, string, object and symbol
 
 ### Explain the difference between + and -*/ in JS when it comes to coercion.
 + can be used for math and coercion, -*/ can only be used for math operations
+
+### How does prototypal inheritance work?
+Objects inherit directly from other objects with Object.create() or Object.assign(), as opposed to Classical Inheritance where object inherit from classes

@@ -143,3 +143,14 @@ It can increase performance tie by reducing server requests
  
 ### What does using 'memcache' do for you?
 Stores data in RAM so that data can be pulled from RAM rather than the database
+
+
+### Why would you want to use an LRU cache in a backend server?
+You can send data more quickly for heavy users and keep a track of what that user currently accesses the most and delete the least used for new data
+
+### In the Master-Slave paradigm, what tasks are commonly done by the slave databases and why?
+Slaves replicate data from the master database in case the master goes down. Reading from the database can be sent to slave databases
+
+
+### In a multi-tiered architecture, how do we get redundancy and responsiveness?
+A Load balancer for all multiple servers and a load balancer for read queries to slave databases and a master database for adding to the database

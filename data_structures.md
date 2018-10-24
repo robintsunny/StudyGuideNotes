@@ -126,3 +126,11 @@ Recursively, pass a node into the function and find the height of the left and r
 
 ### How can you determine what the Least common ancestor of two nodes is?
 recursively, a function takes in a root node and 2 values. if the root node is null, return null. if the root node is equal to either of the values, return he node. otherwise, recursively call the function on node.left with the 2 values and node.right with the 2 values.  if the left and right of a node return values, that node is the ancestor. if the right ad left return null, return null. if a right and left are returned and one of them is null, then return the non-null value.
+
+## AVL TREE
+
+### What is an AVL tree?
+A BST that has its left and right children's height differ by no more than 1 and each subtree's left and right children's height differ by no more than 1
+
+### How does an AVL Tree self balance?
+Check height values and adjust on inserts while performing necessary rotations

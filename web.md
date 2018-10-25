@@ -154,3 +154,11 @@ Slaves replicate data from the master database in case the master goes down. Rea
 
 ### In a multi-tiered architecture, how do we get redundancy and responsiveness?
 A Load balancer for all multiple servers and a load balancer for read queries to slave databases and a master database for adding to the database
+
+### When does DNS load-balancing become necessary?
+When traffic becomes so high that you need to load balance between servers in different physical locations (global load balancing)
+
+### What is the principle of Least Privilege and how does it relate to the responsibilities of the Load Balancer?
+in a particular abstraction layer of a computing environment, every module (such as a process, a user, or a program, depending on the subject) must be able to access only the information and resources that are necessary for its legitimate purpose
+
+IF a malicious user gets into a server, then they can't access another server because the server they are on can only access certain modules from there

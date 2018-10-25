@@ -101,3 +101,9 @@ Must be balanced
 
 ### What is the big O lookup time for a value in a binary search tree?
 o(log(n))
+
+
+## HASH TABLE
+
+### Give a high level overview of how to implement a hash table.
+Data is sent through a hashing function. That hash function result is then put matched with an array index that points to a linked list and the data is added to the linked list

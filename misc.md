@@ -114,3 +114,9 @@ after an alternating series of 1 and 0, the frame delimiter is a 10101011 sequen
 
 ### What is bit stuffing?
 adding extra 1's or 0's to signify that a particular sequence is not a flag for something else
+
+### What is Address Resolution Protocol?
+Address Resolution Protocol (ARP) is a protocol for mapping an Internet Protocol address (IP address) to a physical machine address that is recognized in the local network
+
+### What is the purpose of TCP?
+provides a byte stream service that is connection oriented (connection has to made first) and reliable (sends request again if no ACK is received). if data is too large to send, TCP will break it up into small parts and send it

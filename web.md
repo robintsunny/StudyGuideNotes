@@ -162,3 +162,10 @@ When traffic becomes so high that you need to load balance between servers in di
 in a particular abstraction layer of a computing environment, every module (such as a process, a user, or a program, depending on the subject) must be able to access only the information and resources that are necessary for its legitimate purpose
 
 IF a malicious user gets into a server, then they can't access another server because the server they are on can only access certain modules from there
+
+
+### What is database partitioning?
+A collection of databases that are identical, but users are assigned a specific database request from
+
+### Explain high availability and how it relates to the master-master paradigm
+A collection of servers that check each other for a "heartbeat" and take on the burden should one server die

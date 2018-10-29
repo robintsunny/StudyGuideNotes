@@ -169,3 +169,14 @@ A collection of databases that are identical, but users are assigned a specific 
 
 ### Explain high availability and how it relates to the master-master paradigm
 A collection of servers that check each other for a "heartbeat" and take on the burden should one server die
+
+<!-- WEEK 5 -->
+
+### Why is FTP a bad idea?
+If you send intellectual property or configuration codes, anyone can intercept it, such as server login credentials
+
+### What kinds of information is at risk when comunicating over HTTP?
+session information, cookie header information
+
+### Why should you ensure that files on a web server are not being executed by root?
+A malicious user can take advantage of a vulnerability and execute a command to mess up the server

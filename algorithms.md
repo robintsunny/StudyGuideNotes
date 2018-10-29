@@ -92,18 +92,23 @@ Sorting for elements between 1 and n^2
 
 
 <!-- WEEK 4 -->
-## BINARY SEARCH TREE
-
-### What are the constraints of a Binary Search Tree?
-A node's left value must be less than the first node's
-A node's right value must be greater than the first node's
-Must be balanced
-
-### What is the big O lookup time for a value in a binary search tree?
-o(log(n))
 
 
 ## HASH TABLE
 
 ### Give a high level overview of how to implement a hash table.
 Data is sent through a hashing function. That hash function result is then put matched with an array index that points to a linked list and the data is added to the linked list
+
+### Give a high level overview of how to implement a Linked List.
+Nodes are created with values and pointers to other nodes to create a "list"
+
+<!-- WEEK 5 -->
+
+## BINARY SEARCH
+
+### Why is binary search logarithmic time?
+It removes half of the elements with every comparison
+
+
+### If an element is smaller than its right neighbors, explain why there is definitely a peak to the right.
+the definition of peak elements say that if all numbers are in an increasing fashion, then the last element is the peak

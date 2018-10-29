@@ -120,3 +120,26 @@ Address Resolution Protocol (ARP) is a protocol for mapping an Internet Protocol
 
 ### What is the purpose of TCP?
 provides a byte stream service that is connection oriented (connection has to made first) and reliable (sends request again if no ACK is received). if data is too large to send, TCP will break it up into small parts and send it
+
+### What is a frame check sequence?
+A number at the end of the frame that is created from the previous sequence to detect corruption in the frame. A sender will create the sequence from the sequence and the receiver will create the sequence again and match them up to make sure no data was corrupted 
+
+### What is a MAC address?
+an identifier for routers to know what devices to send data to
+
+### How do packets get transferred around the internet?
+Internet Protocol (IP) Addresses. Data is sent from one network with an IP address to and from another network.  A router will look at a PPP address that is wrapped around an IP address and will be routed accordingly
+
+<!-- WEEK 5 -->
+
+### Top 10 ways to speed up a website
+1. Minimize HTTP requests
+2. Minify and combine files (js, html, css
+3. Use asynchronous loading for CSS and JavaScript files
+4. Defer JavaScript loading
+5. Minimize time to first byte
+6. Reduce server response time
+7. Choose the right hosting option for your needs
+8. Run a compression audit
+9. Enable compression
+10. Enable browser caching

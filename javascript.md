@@ -213,11 +213,23 @@ as of ES6: null, undefined , boolean, number, string, object and symbol
 ### How does prototypal inheritance work?
 Objects inherit directly from other objects with Object.create() or Object.assign(), as opposed to Classical Inheritance where object inherit from classes
 
-### What is a frame check sequence?
-A number at the end of the frame that is created from the previous sequence to detect corruption in the frame. A sender will create the sequence from the sequence and the receiver will create the sequence again and match them up to make sure no data was corrupted 
 
-### What is a MAC address?
-an identifier for routers to know what devices to send data to
+### What's the JS Global Object?
+The overarching place where variables and functions are provided and shared between multiple scripts (window in browser, global in node)
 
-### How do packets get transferred around the internet?
-Internet Protocol (IP) Addresses. Data is sent from one network with an IP address to and from another network.  A router will look at a PPP address that is wrapped around an IP address and will be routed accordingly
+<!-- WEEK 5 -->
+
+### What is a Promise?
+A promise is a special JavaScript object that links “producing code” and the “consuming code” together
+
+### what arguments does the Promise object take?
+resolve, reject
+
+### what arguments does the resolve function take?
+value
+
+### What arguments does .then take?
+a result function and error function
+
+### explain .then in the context of the callback queue
+.then takes in a callback that can be written inside its argument, whereas a callback must be defined beforehand

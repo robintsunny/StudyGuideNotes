@@ -143,3 +143,10 @@ Internet Protocol (IP) Addresses. Data is sent from one network with an IP addre
 8. Run a compression audit
 9. Enable compression
 10. Enable browser caching
+
+### How can you speed up a website?
+1. Avoid manually authoring CSS/JS in the middle of your HTML (automating this process with tools is preferred)
+2. Place CSS towards the top, place JS towards the bottom
+3. Using async calls for third party requests
+4. Combine multiple css files
+5. Use <link> instead of @import

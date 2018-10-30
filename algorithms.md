@@ -112,3 +112,6 @@ It removes half of the elements with every comparison
 
 ### If an element is smaller than its right neighbors, explain why there is definitely a peak to the right.
 the definition of peak elements say that if all numbers are in an increasing fashion, then the last element is the peak
+
+### Explain how you can still find an element in log time when the array is rotated
+If you can find the pivot element, then you can still do log(n) binary search on it

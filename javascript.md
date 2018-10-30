@@ -233,3 +233,12 @@ a result function and error function
 
 ### explain .then in the context of the callback queue
 .then takes in a callback that can be written inside its argument, whereas a callback must be defined beforehand
+
+### What is Promise Chaining?
+a way to execute async tasks in succession
+
+### Explain what is returned by .then
+another promise that is to be resolved
+
+### How can you suspend the execution of a .then statement?
+return a promise without resolving it

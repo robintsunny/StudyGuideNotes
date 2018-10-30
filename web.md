@@ -180,3 +180,18 @@ session information, cookie header information
 
 ### Why should you ensure that files on a web server are not being executed by root?
 A malicious user can take advantage of a vulnerability and execute a command to mess up the server
+
+
+### What is WPA2?
+An encryption protocol used by wireless routers to block users from sniffing your traffic
+
+### What is public key cryptography?
+A protocol where two keys are creatd differently but related: a private key and public key. the public key is encrypted, the private key is the only thing that can decrypt the public key. a sender can send information that has been encrypted in the receiver's public key and the receiver's private key can decrypt the information
+
+### What is a certificate authority?
+Entity that issues digital certificates. The digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or assertions made by the private key that corresponds to the public key that is certified.
+
+In this model of trust relationships, a CA is a trusted third party that is trusted by both the subject (owner) of the certificate and the party relying upon the certificate.
+
+### Why do certificate authorities exist?
+it's a middleman that two users can trust to be secure their data between transfers

@@ -195,3 +195,6 @@ In this model of trust relationships, a CA is a trusted third party that is trus
 
 ### Why do certificate authorities exist?
 it's a middleman that two users can trust to be secure their data between transfers
+
+### Explain Diffie-Hellman key exchange. Why does it work?
+its a mathematical formula. P is a large prime number and G is a generated number (usually 2). One coputer chooses a nmumber for A and another computer chooses a number for B. B creates a number TB from the formula and A multiplies that number by regular A, and B does the same thing for TA. both users A and B agree on g^(A*B)%p, so neither one needs to know that other's number to get back their TA or TB

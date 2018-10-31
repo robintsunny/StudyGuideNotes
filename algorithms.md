@@ -115,3 +115,10 @@ the definition of peak elements say that if all numbers are in an increasing fas
 
 ### Explain how you can still find an element in log time when the array is rotated
 If you can find the pivot element, then you can still do log(n) binary search on it
+
+### How does Interpolation Search Work?
+In a uniformly distributed collection of integers, you interpolate the searched element between min and max and then access that index. if the number matches, return it. if your number is less than the searched number, recurse over your number to the max and vice versa, repeat
+
+### What is Interpolation Search's expected time complexity, and what is it sworst time complexity? Why?
+Expected: log(log(n))
+worst: n

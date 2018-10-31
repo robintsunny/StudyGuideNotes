@@ -150,3 +150,25 @@ Internet Protocol (IP) Addresses. Data is sent from one network with an IP addre
 3. Using async calls for third party requests
 4. Combine multiple css files
 5. Use <link> instead of @import
+
+### What is the DOM?
+The backbone of an HTML document are tags. According to Document Object Model (DOM), every HTML-tag is an object. Nested tags are called “children” of the enclosing one. The text inside a tag it is an object as well. All these objects are accessible using JavaScript.
+
+### What happens when you omit the head tag or the body tag in your HTML?
+It will automatically be added
+
+### What happens if you inlclude more tags after the tag?
+They become nodes in the DOM
+
+### What kind of object is returned by .childNodes?
+a special array-like iterable object
+
+### Talk about the different ways you can access DOM elements in jS
+Parent, Siblings, Children
+
+### What are two important properties of DOM collections?
+Read only: We can’t replace a child by something else assigning childNodes[i] = ...
+LivE: If we keep a reference to elem.childNodes, and add/remove nodes into DOM, then they appear in the collection automatically.
+
+### What's the difference between calling .childnodes and calling .children?
+.children shows only elements (div, ul, script)

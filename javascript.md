@@ -242,3 +242,16 @@ another promise that is to be resolved
 
 ### How can you suspend the execution of a .then statement?
 return a promise without resolving it
+
+### When would you want to use Promise.resolve()?
+The method is used when we already have a value, but would like to have it “wrapped” into a promise.
+
+### Explain how Promise.all works.
+The method to run many promises in parallel and wait till all of them are ready. It takes an iterable object with promises, technically it can be any iterable, but usually it’s an array, and returns a new promise. The new promise resolves with when all of them are settled and has an array of their results.
+
+### What happens when you pass a non-promise object in the iterable you pass to Promise.all?
+It is treated as Promise.resolve(non-promise object)
+
+
+### What is Promise.race
+takes an iterable of promises, but instead of waiting for all of them to finish, it waits for the first result (or error) and goes on with it

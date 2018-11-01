@@ -172,3 +172,10 @@ LivE: If we keep a reference to elem.childNodes, and add/remove nodes into DOM, 
 
 ### What's the difference between calling .childnodes and calling .children?
 .children shows only elements (div, ul, script)
+
+### What happens if you set innerHTML to a script?
+If innerHTML inserts a script tag into the document – it doesn’t execute.
+It becomes a part of HTML, just as a script that has already run.
+
+### What does the .hidden property do?
+.hidden specifies whether the element is visible or not.

@@ -198,3 +198,6 @@ it's a middleman that two users can trust to be secure their data between transf
 
 ### Explain Diffie-Hellman key exchange. Why does it work?
 its a mathematical formula. P is a large prime number and G is a generated number (usually 2). One coputer chooses a nmumber for A and another computer chooses a number for B. B creates a number TB from the formula and A multiplies that number by regular A, and B does the same thing for TA. both users A and B agree on g^(A*B)%p, so neither one needs to know that other's number to get back their TA or TB
+
+### What is SQL injection? How do you avoid it?
+A type of attack where a user can insert a SQL query or command into a form that will get executed. You can avoid it with Real Escape String

@@ -255,3 +255,13 @@ It is treated as Promise.resolve(non-promise object)
 
 ### What is Promise.race
 takes an iterable of promises, but instead of waiting for all of them to finish, it waits for the first result (or error) and goes on with it
+
+
+### What does the async keyword do?
+“async” before a function means a function always returns a promise. If the code has return (non-promise) in it, then JavaScript automatically wraps it into a resolved promise with that value
+
+### What does the await keyword do?
+await is used inside an async function. await makes JavaScript wait until the promise settles and returns its result
+
+### what does console.dir() do?
+Displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.

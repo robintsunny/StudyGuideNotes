@@ -122,3 +122,11 @@ In a uniformly distributed collection of integers, you interpolate the searched 
 ### What is Interpolation Search's expected time complexity, and what is it sworst time complexity? Why?
 Expected: log(log(n))
 worst: n
+
+### What is the best solution to the Kth smallest/largest problem?
+Min Heap and call extract k times
+
+### Compare using a min-heap and a max-heap to sovle kth smallest/largest problem
+Build a max heap with only k amount of nodes, then as more nodes are to be added you first compare them to the root and see if the new node is less than the root node
+
+Min Heap and call extract k times

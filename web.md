@@ -201,3 +201,12 @@ its a mathematical formula. P is a large prime number and G is a generated numbe
 
 ### What is SQL injection? How do you avoid it?
 A type of attack where a user can insert a SQL query or command into a form that will get executed. You can avoid it with Real Escape String
+
+### What is same-origin policy?
+a policy that prevents document or script loaded form one origin form getting or setting properties of a  document frmo a different origin . Two pages have the same origin  if the protocol, port given, and host are the same for both pages
+
+### When is it not enforced?
+When you request data from the same server
+
+### What is JSONP?
+padded JSON, grab data from a server and tell the server what function you want called and if the server cooperates, then you can incorporate that data into your DOM

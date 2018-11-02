@@ -130,3 +130,11 @@ Min Heap and call extract k times
 Build a max heap with only k amount of nodes, then as more nodes are to be added you first compare them to the root and see if the new node is less than the root node
 
 Min Heap and call extract k times
+
+### Explain how finding pairs in an array can be solved in linear time
+Initialize diff = inf, right = length-1 and left = 0. 
+
+while l < r:
+1. if (a[l] + a[r] - sum < diff), update to new diff and results pair
+2. if (a[l] + a[r] > sum), l++
+3. else, r--

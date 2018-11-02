@@ -179,3 +179,15 @@ It becomes a part of HTML, just as a script that has already run.
 
 ### What does the .hidden property do?
 .hidden specifies whether the element is visible or not.
+
+### What does data before action mean?
+Decomposing problems into data types first then executing actions on those data structures
+
+### What are the components of a class?
+Field and Methods
+
+### What is encapsulation?
+the idea that fields of an object instance can only be read or written by methods of that instance's class
+
+### what is the difference between public and private methods?
+public member of a class are visible anywhere which means it is ok to access them from outside their own class. private members are meant to only be accessed by methods of the same class

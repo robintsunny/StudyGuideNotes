@@ -138,3 +138,9 @@ while l < r:
 1. if (a[l] + a[r] - sum < diff), update to new diff and results pair
 2. if (a[l] + a[r] > sum), l++
 3. else, r--
+
+
+### What are the steps to detecting a cycle in a graph?
+1. for each edge, make a subset of the two nodes
+2. If the two nodes are not in the same subset, then union into one subset
+3. if they are in the same subset, then a cycle is found

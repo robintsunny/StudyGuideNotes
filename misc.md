@@ -191,3 +191,6 @@ the idea that fields of an object instance can only be read or written by method
 
 ### what is the difference between public and private methods?
 public member of a class are visible anywhere which means it is ok to access them from outside their own class. private members are meant to only be accessed by methods of the same class
+
+### What is the rationale for writing services?
+When you have to support multiple clients using different protocols. It’s  beneficial to use services from your controllers in order to encapsulate domain, application, and infrastructure logic and preserve the cohesiveness of your domain mode

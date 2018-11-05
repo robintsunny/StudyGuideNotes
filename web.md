@@ -210,3 +210,40 @@ When you request data from the same server
 
 ### What is JSONP?
 padded JSON, grab data from a server and tell the server what function you want called and if the server cooperates, then you can incorporate that data into your DOM
+
+
+### What are the 9 areas of inquiry that you you should define froma high level before diving into implementation?
+1. Features
+2. Define APIs
+3. Availability
+4. Latency Performance
+5. Scalability
+6. Durability
+7. Class Diagram
+8. Security and PRivacy
+9. Cost Effectiveness
+
+### compare ACID vs. BASE
+ACID: Autonomous, Consistent, Isolation, Durability. Used mor ein relational databases
+ 
+BASE: Basically Available SoftState Eventual Consistency. Used more for NoSQL databases
+
+### What is consistent hashing?
+Equaling splitting data across several nodes of a database
+
+### What is optimistic vs. pessimistic locking?
+O: When multiple transactions update a record, the one with the latest timestamp or version number is kept
+
+P: when multiple transactions update a record, it is done one at a time
+
+### What is strong vs. eventual consistency?
+Strong: Reads will always see latest writes
+Eventual: Reads will see some writes and eventually see new writes
+
+### Compare and contrast SQL vs. NoSQL vis a vis the above
+SQL: has ACID properties
+
+NoSQL: Scales quickly and better
+
+### Why is caching important in system design?
+It's used to speed up requests if certain data is frequently needed

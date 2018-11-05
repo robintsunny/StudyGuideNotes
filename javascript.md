@@ -265,3 +265,13 @@ await is used inside an async function. await makes JavaScript wait until the pr
 
 ### what does console.dir() do?
 Displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
+
+
+### What is currying?
+translating a function from callable as f(a, b, c) into callable as f(a)(b)(c)
+
+### What extra features do you get when using lodash.curry?
+return a wrapper that allows a function to be called normally when all arguments are supplied or returns a partial otherwise
+
+### Why might you use currying?
+currying allows both to keep the function callable normally and to get partials easily

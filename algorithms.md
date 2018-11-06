@@ -144,3 +144,19 @@ while l < r:
 1. for each edge, make a subset of the two nodes
 2. If the two nodes are not in the same subset, then union into one subset
 3. if they are in the same subset, then a cycle is found
+
+
+### What is the Floyd-Warchall algorithm good for?
+The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph
+
+### How does Floyd-Warchall work?
+1. Set up a VxV array "dist" and fill in the spaces with 0, Inf, or direct edge weights
+2. Iterate through every i-j pair in table with another k value. K if used for intermediate nodes to pass through
+3. fill in the array with a new value:
+```js
+        if ( dist[i][k] != INF && 
+            dist[k][j] != INF && 
+            dist[i][k] + dist[k][j] < dist[i][j]
+            )
+        dist[i][j] = dist[i][k] + dist[k][j];
+ ```

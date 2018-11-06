@@ -194,3 +194,6 @@ public member of a class are visible anywhere which means it is ok to access the
 
 ### What is the rationale for writing services?
 When you have to support multiple clients using different protocols. It’s  beneficial to use services from your controllers in order to encapsulate domain, application, and infrastructure logic and preserve the cohesiveness of your domain mode
+
+### What is the idea of creating services?
+To keep Rails controllers clean and DRY

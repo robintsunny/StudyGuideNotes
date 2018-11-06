@@ -247,3 +247,34 @@ NoSQL: Scales quickly and better
 
 ### Why is caching important in system design?
 It's used to speed up requests if certain data is frequently needed
+
+
+### What is a bloom Filter?
+used to decide if an element is part of a set or not, may have false positive but never false negatives. super space efficient
+
+### What is PAXOS?
+derive consensus over distributed hosts
+
+### What is Pub-Sub pattern?
+A publisher sends a message to a queue, a subscriber gets the message from the queue
+
+### What is Map Reduce?
+used to distributed and paralle processing of big data. MAP filters and sorts data and REDUCE summarizes the data
+
+### What is multi-threading?
+
+
+### What is Redis?
+REmote DIctionary Store. Key-Value storage, NoSQL DB, in-memory DB with persistence, can be set up as a cluster to provide more availabilty and replication. Can flush data on the harddrive if needed
+
+### What is Kafka?
+Distributed, Partitioned, Replicated pub-sub service for online and offline messaging 
+
+### What are NGINX and HAProxy?
+Very efficient Load balancers and servers
+
+### What is Docker?
+software platform provinding containers inside which you can develop and run distributed applications. can be run on laptop, cloud, or data center 
+
+### What is Hadoop/Spark?
+A faster version of MapReduce

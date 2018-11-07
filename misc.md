@@ -197,3 +197,19 @@ When you have to support multiple clients using different protocols. It’s  ben
 
 ### What is the idea of creating services?
 To keep Rails controllers clean and DRY
+
+
+### Explain the syntax flex: 1, flex: 2, etc.
+ Flex: 1 is a baseline width. A container "A" using Flex: 2 and a container "B" using Flex: 3 will have container A taking up 40% of the width and B taking up 60%
+
+### What is the default value of align-items in the flex world?
+ Stretch
+
+### What is flex-basis?
+The flexbox way of using WIDTH
+
+### Explain flex-wrap
+When screen widths drop below a certain amount, containers will wrap to the next line if needed
+
+### what is margin: auto used for?
+It centers a child horizontally and vertically when the parent container is set to display: flex

@@ -278,3 +278,17 @@ software platform provinding containers inside which you can develop and run dis
 
 ### What is Hadoop/Spark?
 A faster version of MapReduce
+
+### Explain the decision to use 7 characters for the tinyURL
+at 1000 requests per second, it would take 100 years to exhaust 62^7 (3.5 trillion) unique strings (62 = a-z, A-Z, 0-9)
+
+### How do you turn a random number between 1 and 3.5 trillion into a 7 character string?
+any number can up to 3.5 trillion can be represented as a 43-bit number which can be turned into a string
+
+
+### What is the downside to just generating a random string, checking the db and putting it if it doesn't exist?
+If another user is doing the same thing at the same time, there could be a corruption for what the tinyUrl is referencing
+
+
+### What is the downside to generating a random string, putting into the DB, getting and checking they are the same?
+IT can require multiple requests if the random string generator produces collisions

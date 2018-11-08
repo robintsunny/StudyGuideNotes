@@ -292,3 +292,19 @@ If another user is doing the same thing at the same time, there could be a corru
 
 ### What is the downside to generating a random string, putting into the DB, getting and checking they are the same?
 IT can require multiple requests if the random string generator produces collisions
+
+
+### What is the MD5 based approach? Advantages/disadvantages?
+Calculate the MD5 of the longer URL then take the first 43 bits of the MD5 and use it to generate the tinyURL. MD5 is a hashing function that returns a 128 bit long hash. C
+
+ADV: saves space in the database
+DIS: Collisions are still possible
+
+### Explain the counter based approach
+A worker will be given a counter number and then rhe counter will increment for the next worker's request. This is to give unique numbers to workers
+
+### What are the advantages with a range-based counter apporach?
+
+
+
+

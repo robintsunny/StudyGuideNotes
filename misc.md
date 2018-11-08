@@ -213,3 +213,17 @@ When screen widths drop below a certain amount, containers will wrap to the next
 
 ### what is margin: auto used for?
 It centers a child horizontally and vertically when the parent container is set to display: flex
+
+
+### Explain the difference between inline and inline block
+INLINE: The default value for elements. Think of elements like <span>, <em>, or <b> and how wrapping text in those elements within a string of text doesn't break the flow of the text. An inline element will not accept height and width. It will just ignore it.
+
+INLINE BLOCK: An element set to inline-block is very similar to inline in that it will set inline with the natural flow of text (on the "baseline"). The difference is that you are able to set a width and height which will be respected.
+
+
+### Explain display: block
+Block level elements do not sit inline but break past them. By default (without setting a width) they take up as much horizontal space as they can.
+
+### What does position relative and absolute do?
+an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+

@@ -227,3 +227,19 @@ Block level elements do not sit inline but break past them. By default (without 
 ### What does position relative and absolute do?
 an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
 
+
+### Explain floats and clears
+Float allows divs to be placed somewhere and have text wrap around that image. An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float.
+
+### Explain the clearfix
+Rather than setting the overflow on the parent, you apply an additional class like "clearfix" to it. Then apply this CSS:
+``` css
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+```
+This will apply a small bit of content, hidden from view, after the parent element which clears the float.

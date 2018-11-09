@@ -160,3 +160,7 @@ The problem is to find shortest distances between every pair of vertices in a gi
             )
         dist[i][j] = dist[i][k] + dist[k][j];
  ```
+
+
+### Explain Kruskal's Minimum Spanning Tree algorithm. What algorithm does this remind you of? What's the difference?
+A spanning tree is a way to connect all nodes in a connected undirected graph with minimal edge weights. It's like finding a cycle in a graph, but you want to connect all nodes and not just look for cycles

@@ -305,6 +305,14 @@ A worker will be given a counter number and then rhe counter will increment for 
 
 ### What are the advantages with a range-based counter apporach?
 
+### What is a Trie?
+A tree structure with letters at each node
 
+### What might you want to store in each node in your Trie?
+A letter
 
+### How do you handle it when your Trie becomes too large to be stored on one machine?
+You can split the alphabet into subsections and direct requests to those subsections
+
+### How would you collect and update the top results for a certain node in the Trie?
 

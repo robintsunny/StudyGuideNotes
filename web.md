@@ -316,3 +316,12 @@ You can split the alphabet into subsections and direct requests to those subsect
 
 ### How would you collect and update the top results for a certain node in the Trie?
 
+### Explain Websockets
+Fully bidirectional connection;  both server and client can initiate requests.
+
+
+### How would an application know that someone is online?
+The app can find when the last time a heartbeat was detected by the user and see if it is within the frequency of sent heartbeats
+
+### What happens when you send a message to someone who isn't online?
+A server will persist the messages and ping for a heartbeat until the offline user is online again and then send the messages

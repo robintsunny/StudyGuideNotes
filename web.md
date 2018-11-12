@@ -325,3 +325,9 @@ The app can find when the last time a heartbeat was detected by the user and see
 
 ### What happens when you send a message to someone who isn't online?
 A server will persist the messages and ping for a heartbeat until the offline user is online again and then send the messages
+
+### What is the matter with the Naive solution for Timeline?
+find out who the user is following, then select all tweets from all followed users and then sort by time 
+
+### How would you ensure high availability of the timeline?
+when a user tweets, a table associated with each follower is updated to contain that tweet which can be accessed when the page is loaded

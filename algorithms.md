@@ -164,3 +164,11 @@ The problem is to find shortest distances between every pair of vertices in a gi
 
 ### Explain Kruskal's Minimum Spanning Tree algorithm. What algorithm does this remind you of? What's the difference?
 A spanning tree is a way to connect all nodes in a connected undirected graph with minimal edge weights. It's like finding a cycle in a graph, but you want to connect all nodes and not just look for cycles
+
+
+### What is the time complexity of inserting into a sorted singly-linked LL? How can you do it in one pass only
+O(n), iterate from the head to the tail and find the node that is larger than the node you want to insert and insert your node before that node
+
+### What do you have to do to delete a node from a list?
+Find the target node and then remove its pointers to other nodes and the pointers to the target node
+

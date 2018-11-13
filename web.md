@@ -331,3 +331,6 @@ find out who the user is following, then select all tweets from all followed use
 
 ### How would you ensure high availability of the timeline?
 when a user tweets, a table associated with each follower is updated to contain that tweet which can be accessed when the page is loaded
+
+### Discuss Searching, Indexing, and Push notifications in the context of Designing Twitter
+...

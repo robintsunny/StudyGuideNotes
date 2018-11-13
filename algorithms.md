@@ -172,3 +172,17 @@ O(n), iterate from the head to the tail and find the node that is larger than th
 ### What do you have to do to delete a node from a list?
 Find the target node and then remove its pointers to other nodes and the pointers to the target node
 
+### How may we compare two strings using a Linked List?
+1. iterate over both lists while there is a Node for each list and that each of those nodes' values are equal. 
+2. Set Node1 to Node1.next and Node2 to Node2.next. 
+3. If Node1 and Node2 exist, check to see if the letters mismatch. Return 1 if Node1 > Node2 or -1 if Node1 < Node2
+4. If Node1 && !Node2, return 1. If !Node1 && Node2, return -1 (node2 or node1 reached end, respectively)
+5. OTherwise, return 0 (both lists have reached their end)
+
+### Explain how you handle numbers of different sizes when summing two Linked Lists
+1. Calculate difference of sizes of two linked lists. Let the difference be diff
+2. Move diff nodes ahead in the bigger linked list. 
+3. Calculate sum of the carry (calculated in previous step) with the remaining left sub-list of larger list. Nodes of this sum are added at the beginning of sum list obtained previous step.
+
+### Explain how the carry operation works in the handling summing Linked Lists of different sizes
+If a sum goes over ten, make a new node of the 1's place then backtrack and add 1 to the Node.head's place

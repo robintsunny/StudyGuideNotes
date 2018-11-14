@@ -334,3 +334,12 @@ when a user tweets, a table associated with each follower is updated to contain 
 
 ### Discuss Searching, Indexing, and Push notifications in the context of Designing Twitter
 ...
+
+### What is ambiguous at the outset of the garage problem?
+size, type of garage, type of vehicles in spaces
+
+### What is the value of enum as a datatype?
+it is an enumerable set of numbers. those numbers can be mapped to other things, such as 1: red, 2: blue
+
+### Explain the idea of an abstract class
+a datatype created to store specific information that will help solve an overall problem through object oriented programming

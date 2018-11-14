@@ -186,3 +186,13 @@ Find the target node and then remove its pointers to other nodes and the pointer
 
 ### Explain how the carry operation works in the handling summing Linked Lists of different sizes
 If a sum goes over ten, make a new node of the 1's place then backtrack and add 1 to the Node.head's place
+
+### When creating an alternating linked list, what do you do?
+The idea is to run a loop while there are available positions in first loop and insert nodes of second list by changing pointers. 
+
+### What is the best method for getting the union and intersection of two lists?
+Union (list1, list2)
+Initialize the result list as NULL and create an empty hash table. Traverse both lists one by one, for each element being visited, look the element in hash table. If the element is not present, then insert the element to result list. If the element is present, then ignore it.
+
+Intersection (list1, list2)
+Initialize the result list as NULL and create an empty hash table. Traverse list1. For each element being visited in list1, insert the element in hash table. Traverse list2, for each element being visited in list2, look the element in hash table. If the element is present, then insert the element to result list. If the element is not present, then ignore it.

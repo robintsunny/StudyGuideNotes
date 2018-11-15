@@ -343,3 +343,15 @@ it is an enumerable set of numbers. those numbers can be mapped to other things,
 
 ### Explain the idea of an abstract class
 a datatype created to store specific information that will help solve an overall problem through object oriented programming
+
+
+### Explain compound components paradigm, with cloneElement
+
+
+### How to you place a vehicle in an efficient way?
+Use a stack to keep a track of open spots
+
+### How do you retreive a vehicle from the parking lot in optimum time
+
+
+### How is concurrency a possible issue in this question

@@ -355,3 +355,6 @@ Use a stack to keep a track of open spots
 
 
 ### How is concurrency a possible issue in this question
+
+### Why might messages get delivered in the wrong order?
+you can send one message to one server and another message to another server. when the other person comes online, it becomes a race to see which one gets delivered first

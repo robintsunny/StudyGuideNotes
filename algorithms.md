@@ -202,3 +202,6 @@ Algorithm: reverse(head, k)
 1. Reverse the first sub-list of size k. While reversing keep track of the next node and previous node. Let the pointer to the next node be next and pointer to the previous node be prev. See this post for reversing a linked list.
 2. head.next = reverse(next, k) /* Recursively call for rest of the list and link the two sub-lists */
 3. return prev /* prev becomes the new head of the list
+
+### How might you detect and remove a cycle in a Linked List?
+search for a loop, locate the head of the loop, and set the last element's next pointer to null

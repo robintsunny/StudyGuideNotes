@@ -205,3 +205,6 @@ Algorithm: reverse(head, k)
 
 ### How might you detect and remove a cycle in a Linked List?
 search for a loop, locate the head of the loop, and set the last element's next pointer to null
+
+### Why is Mergesort preferred for working with LL's?
+The slow random-access performance of a linked list makes some other algorithms (such as quicksort) perform poorly, and others (such as heapsort) completely impossible

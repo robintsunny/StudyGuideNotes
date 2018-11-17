@@ -358,3 +358,12 @@ Use a stack to keep a track of open spots
 
 ### Why might messages get delivered in the wrong order?
 you can send one message to one server and another message to another server. when the other person comes online, it becomes a race to see which one gets delivered first
+
+### Why does Uber want to replicate data in a Hadoop warehouse?
+for analytics such as busiest hours, least busiest days, etc. it doesnt affect the application's performance
+
+### What is Kafka used for in Uber?
+Ingests a lot of messages in realt time and ensure messages are not lost (Notifications mostly in uber)
+
+### What is an SOA?
+Service Oriented Architecture; core feature is to have smaller services which workinternally or have an external interface that serve one purpose which are decoupled from each other and can work if another feature goes down

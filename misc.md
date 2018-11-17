@@ -243,3 +243,7 @@ Rather than setting the overflow on the parent, you apply an additional class li
 }
 ```
 This will apply a small bit of content, hidden from view, after the parent element which clears the float.
+
+
+
+### Explain how using context differs from mapping over children to give implicit props

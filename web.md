@@ -367,3 +367,9 @@ Ingests a lot of messages in realt time and ensure messages are not lost (Notifi
 
 ### What is an SOA?
 Service Oriented Architecture; core feature is to have smaller services which workinternally or have an external interface that serve one purpose which are decoupled from each other and can work if another feature goes down
+
+### What is provisioning in the context of SOA?
+a service lives on many machines and in different regions. when a service goes down, provisioning is a protocol that has machines or containers getting started automatically deploys and the provisioning step is getting the software on to the newly started machine or container
+
+### What tools are available for ensuring and testing resiliency?
+Halestorm, Shadow Fleets

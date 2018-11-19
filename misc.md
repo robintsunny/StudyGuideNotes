@@ -247,3 +247,16 @@ This will apply a small bit of content, hidden from view, after the parent eleme
 
 
 ### Explain how using context differs from mapping over children to give implicit props
+
+
+### What is the use case for higher order components?
+
+
+### What is a higher Order Function?
+
+
+### What is a Higher Order Component?
+
+
+### How do HOCs replace classical inheritance?
+

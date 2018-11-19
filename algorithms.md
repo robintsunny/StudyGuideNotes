@@ -208,3 +208,16 @@ search for a loop, locate the head of the loop, and set the last element's next 
 
 ### Why is Mergesort preferred for working with LL's?
 The slow random-access performance of a linked list makes some other algorithms (such as quicksort) perform poorly, and others (such as heapsort) completely impossible
+
+
+### Explain the Longest Common Subsequence problem
+given two strings, find the longest subsequence of characters between them 
+
+1. iterate over one string (length m) by each character and iterate over the second string (length n) inside the first iterator and open up a matrix of m*n
+2. if the characters of each string matches for a specific iteration, add 1 from the up-left-diagonal in the matrix for the current space.  If they don't match, pick the larger value between the value above and the value to the left.
+3. iterate until last square in matrix
+
+to get the subsequence string:
+1. start in matrix[n][m]. if matrix[n-1][m] or matrix[n][m-1] is equal to matrix[n][m], move to the matching spot.
+2. if the top or left value is not equal, then move to matrix[n-1][m-1]. add string1[m] to a result variable
+3. repeat until 0

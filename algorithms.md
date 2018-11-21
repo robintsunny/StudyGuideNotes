@@ -221,3 +221,29 @@ to get the subsequence string:
 1. start in matrix[n][m]. if matrix[n-1][m] or matrix[n][m-1] is equal to matrix[n][m], move to the matching spot.
 2. if the top or left value is not equal, then move to matrix[n-1][m-1]. add string1[m] to a result variable
 3. repeat until 0
+
+
+### Explain the Longest Increasing Subsequence problem
+given an array of numbers, find the longest subset of increasing values
+
+1. open a res array of size input.length with all values at 1
+2. set i at input[1] and j at input[0]
+3. if input[j] < input[i], res[i] = max(res[i], res[j]+1)
+
+
+### Explain the Edit Distance algorithm
+How many changes need to be made to one string (size m) so that it looks like a second (siez n) string
+
+Make a (m+1)*(n+1) array RES. N = null, RES = 
+[
+    [0, 1, 2, 3, ..., m]
+    [1, N, N, N, ..., N]
+    [2, N, N, N, ..., N]
+    ...
+    [n, N, N, N, ..., N]
+]
+
+If str1[i] !== str2[j], null is replaced by the minimum of RES[m][n-1], RES[m-1][n], and RES[m-1][n-1] plus 1.
+if str1[i] === str2[j], RES[i][j] = RES[m-1][n-1]
+ 
+RES[m][n] is the minimum number of edits needed

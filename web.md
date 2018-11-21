@@ -373,3 +373,12 @@ a service lives on many machines and in different regions. when a service goes d
 
 ### What tools are available for ensuring and testing resiliency?
 Halestorm, Shadow Fleets
+
+
+### What are the downsides to just exposing a RESTful route to the summaraization servers directly to handle incoming messages?
+Let’s say that the clients send the text articles over HTTP to a RESTful API. If at a given point in time the incoming requests increase, the summarization service may be unable to handle all incoming requests and some of them could time out. This will result in poor experience for the customer.
+
+Load Balancer? If for some reason an instance of the summarization service is not able to handle requests and a request is routed to it, this request will most likely be lost. Such a thing could happen if all allocated instances are busy with other work. Also, if a given instance is not responding for some reason, due to a bug in the code, or some other issue, we could again lose a request that was routed to it by the load balancer.
+
+### Explain the way a Message Queue works
+In short, a message queue will allow us to enqueue on it all summarization requests. Let’s call all such requests stored on the queue jobs. Then, if we have a set of workers running the summarization service, each worker could pull jobs from the queue, one at a time. Each job can be processed by the worker that picked it up and the results can be stored in the database.

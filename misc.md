@@ -265,3 +265,6 @@ This will apply a small bit of content, hidden from view, after the parent eleme
 
 
 ### Explain the pattern of render props
+
+### Explain the difference between Controlled and Uncontrolled Components
+

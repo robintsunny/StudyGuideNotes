@@ -247,3 +247,40 @@ If str1[i] !== str2[j], null is replaced by the minimum of RES[m][n-1], RES[m-1]
 if str1[i] === str2[j], RES[i][j] = RES[m-1][n-1]
  
 RES[m][n] is the minimum number of edits needed
+
+### Write you own edit distance solution.
+``` js
+const editDistance = (str1, str2) => {
+    const m = str1.length
+    const n = str2.length
+    const res = Array(n+1).fill(null).map(() => Array(m+1))
+    res[0][0] = 0;
+
+    let i;
+    let j;
+
+    for (i = 1; i < m+1; i++) {
+      res[0][i] = i
+    }
+
+    for (j = 1; j < n+1; j++) {
+      res[j][0] = j
+    }
+
+    for (j = 0; j < n; j++) {
+      for (i = 0; i < m; i++) {
+        if (str1[i] !== str2[j]) {
+            res[j+1][i+1] = 1 + Math.min(
+                    res[j][i+1], 
+                    res[j+1][i], 
+                    res[j][i]) 
+        } else {
+          res[j+1][i+1] = res[j][i]
+        }
+      }
+    }
+
+
+  return res[n][m]
+}
+```

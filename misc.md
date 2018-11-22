@@ -268,3 +268,8 @@ This will apply a small bit of content, hidden from view, after the parent eleme
 
 ### Explain the difference between Controlled and Uncontrolled Components
 
+### What happens on variable reassignment in Ruby?
+The object ids are changed
+
+### Explain the difference between mutating and mon-mutating methods in Ruby.
+mutating methods mutate the variable passed in whereas non-mutating does not modify the variable

@@ -273,3 +273,9 @@ The object ids are changed
 
 ### Explain the difference between mutating and mon-mutating methods in Ruby.
 mutating methods mutate the variable passed in whereas non-mutating does not modify the variable
+
+### Is ruby pass by reference or pass by value?
+both
+
+immutable: with pass by reference, a reference to an object is passed around
+mutable: With pass by value, a copy of an object is created, and it is that copy that gets passed around

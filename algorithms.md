@@ -284,3 +284,9 @@ const editDistance = (str1, str2) => {
   return res[n][m]
 }
 ```
+
+
+### Explain the Minimu Partition problem
+Given a set of integers, the task is to divide it into two sets S1 and S2 such that the absolute difference between their sums is minimum.
+
+

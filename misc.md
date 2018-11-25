@@ -279,3 +279,14 @@ both
 
 immutable: with pass by reference, a reference to an object is passed around
 mutable: With pass by value, a copy of an object is created, and it is that copy that gets passed around
+
+### What is a module?
+A class-like object with methods
+
+### What is the difference between include and extends?
+include makes methods available to an instance of a class and extend makes methods available to the class itself
+
+### What does self.inlcuded(base) do?
+class base
+  extend self
+end

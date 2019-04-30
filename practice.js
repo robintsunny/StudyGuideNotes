@@ -1,7 +1,9 @@
-/* Given an array of integers, return indices of the two 
+/* 
+Given an array of integers, return indices of the two 
 numbers such that they add up to a specific target. You 
 may assume that each input would have exactly one solution, 
-and you may not use the same element twice.*/
+and you may not use the same element twice.
+*/
 const twoSum = (nums, target) => {
     const sums = {};
     sums[nums[0]] = 0
@@ -20,7 +22,8 @@ const twoSum = (nums, target) => {
 };
 
 
-/* You are given two non-empty linked lists representing 
+/* 
+You are given two non-empty linked lists representing 
 two non-negative integers. The digits are stored in reverse 
 order and each of their nodes contain a single digit. Add 
 the two numbers and return it as a linked list.
@@ -29,7 +32,7 @@ function ListNode(val) {
     this.val = val;
     this.next = null;
 }
- */
+*/
 const addTwoNumbers = (l1, l2) => {
     let node1 = l1.next;
     let node2 = l2.next;
@@ -87,8 +90,11 @@ const addTwoNumbers = (l1, l2) => {
     return res
 };
 
-/*Given a string, find the length of the longest substring 
-without repeating characters.*/
+
+/*
+Given a string, find the length of the longest substring 
+without repeating characters.
+*/
 const lengthOfLongestSubstring = (s) => {
     let letters = {};
     let winner = 0;
@@ -107,3 +113,39 @@ const lengthOfLongestSubstring = (s) => {
 
     return winner
 };
+
+
+/* 
+There are two sorted arrays nums1 and nums2 of size m 
+and n respectively. Find the median of the two sorted arrays.
+The overall run time complexity should be O(log(m + n)). 
+*/
+
+var findMedianSortedArrays = function (nums1, nums2) {
+    const nums = [...nums1, ...nums2]
+    const sorted = quickSort(nums)
+    const sortedLength = sorted.length;
+
+    if (sortedLength % 2 === 0) {
+        //4 => 1,2
+        const mid = sortedLength / 2
+        const ans = (sorted[mid - 1] + sorted[mid]) / 2
+        return ans
+    } else {
+        return sorted[Math.floor(sortedLength / 2)]
+    }
+};
+
+var quickSort = function (arr) {
+    const arrLength = arr.length
+    if (arrLength <= 1) {
+        return arr
+    }
+
+    const pivot = arrLength - 1
+    const left = arr.filter(el => el < arr[pivot])
+    const middle = arr.filter(el => el === arr[pivot])
+    const right = arr.filter(el => el > arr[pivot])
+
+    return quickSort(left).concat(middle).concat(quickSort(right))
+}

@@ -86,3 +86,24 @@ const addTwoNumbers = (l1, l2) => {
 
     return res
 };
+
+/*Given a string, find the length of the longest substring 
+without repeating characters.*/
+const lengthOfLongestSubstring = (s) => {
+    let letters = {};
+    let winner = 0;
+    let i = 0;
+    let j;
+
+    for (j = 0; j < s.length; j++) {
+        const char = s[j]
+
+        if (letters[char] >= i) { i = letters[char] + 1 }
+        letters[char] = j
+
+        if (j - i + 1 > winner) { winner = j - i + 1 }
+
+    }
+
+    return winner
+};

@@ -121,7 +121,7 @@ and n respectively. Find the median of the two sorted arrays.
 The overall run time complexity should be O(log(m + n)). 
 */
 
-var findMedianSortedArrays = function (nums1, nums2) {
+const findMedianSortedArrays = (nums1, nums2) => {
     const nums = [...nums1, ...nums2]
     const sorted = quickSort(nums)
     const sortedLength = sorted.length;
@@ -136,7 +136,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
     }
 };
 
-var quickSort = function (arr) {
+const quickSort = (arr) => {
     const arrLength = arr.length
     if (arrLength <= 1) {
         return arr
@@ -149,3 +149,25 @@ var quickSort = function (arr) {
 
     return quickSort(left).concat(middle).concat(quickSort(right))
 }
+
+/*
+Given a string s, find the longest palindromic substring in
+s.You may assume that the maximum length of s is 1000.
+*/
+const longestPalindrome = (s) => {
+    let max = '';
+    for (let i = 0; i < s.length; i++) {
+        for (let j = 0; j < 2; j++) {
+            let left = i;
+            let right = i + j;
+            while (s[left] && s[left] === s[right]) {
+                left--;
+                right++;
+            }
+            if ((right - left - 1) > max.length) {
+                max = s.substring(left + 1, right);
+            }
+        }
+    }
+    return max;
+};

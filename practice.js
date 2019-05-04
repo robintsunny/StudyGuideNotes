@@ -200,3 +200,27 @@ const convert = (s, numRows)  => {
 
     return arr.map(r => r.join('')).join('');
 }
+
+/*
+Given a 32 - bit signed integer, reverse digits of an 
+integer.
+*/
+const reverse = (x) => {
+    const max = Math.pow(2, 31) - 1
+    const min = Math.pow(2, 31) * -1
+    let res = 0
+    let n = Math.abs(x)
+    let neg = 1;
+    if (x < 0) { neg = -1 }
+
+    while (n) {
+        let digit = n % 10
+        res = res * 10 + digit
+        if (res * neg > max || res * neg < min) {
+            return 0
+        }
+        n = Math.floor(n / 10)
+    }
+    
+    return res * neg
+};

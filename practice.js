@@ -285,3 +285,27 @@ const myAtoi = (str) => {
     return res
     
 };
+
+/*
+Determine whether an integer is a palindrome.An integer is 
+a palindrome when it reads the same backward as forward.
+*/
+const isPalindrome = (x) => {
+    if (x < 0) {
+        return false
+    }
+
+    let res = 0
+    let c = x
+
+    // built-in JS
+    // const res = parseInt(x.toString().split('').reverse().join(''))
+
+    while (c) {
+        const d = c % 10
+        c = Math.floor(c / 10)
+        res = res * 10 + d
+    }
+
+    return res === x
+};

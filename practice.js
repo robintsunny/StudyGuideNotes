@@ -309,3 +309,39 @@ const isPalindrome = (x) => {
 
     return res === x
 };
+
+
+
+/*
+Given n non - negative integers a1, a2, ..., an, where each 
+represents a point at coordinate(i, ai).n vertical lines 
+are drawn such that the two endpoints of line i is at(i, ai) 
+and(i, 0).Find two lines, which together with x - axis 
+forms a container, such that the container contains the 
+most water.
+*/
+const maxArea = function (h) {
+
+    let vol = 0
+    let b = 0               //beginning index
+    let e = h.length - 1    //ending index
+
+    while (b < e) {
+        const H = Math.min(h[b], h[e])
+        const W = e - b
+
+        // set new volume
+        if (vol < H * W) {
+            vol = H * W
+        }
+
+        //move shorter line towards middle
+        if (h[b] < h[e]) {
+            b++
+        } else {
+            e--
+        }
+    }
+
+    return vol
+};

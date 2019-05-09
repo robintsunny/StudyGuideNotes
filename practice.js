@@ -345,3 +345,94 @@ const maxArea = function (h) {
 
     return vol
 };
+
+/* 
+Given an integer, convert it to a roman numeral. Input is 
+guaranteed to be within the range from 1 to 3999
+*/
+var intToRoman = function(num) {
+    let res = ''
+    let d = 0
+
+    while (num > 0) {
+        if (num >= 1000) {
+            d = Math.floor(num / 1000)
+            num = num % 1000
+            if (d === 1) {
+                res += 'M'
+            } else if (d === 2) {
+                res += 'MM'
+            } else if (d === 3) {
+                res += 'MMM'
+            }
+        } else if (num >= 100) {
+            d = Math.floor(num / 100)
+            num = num % 100
+            if (d === 1) {
+                res += 'C'
+            } else if (d === 2) {
+                res += 'CC'
+            } else if (d === 3) {
+                res += 'CCC'
+            } else if (d === 4) {
+                res += 'CD'
+            } else if (d === 5) {
+                res += 'D'
+            } else if (d === 6) {
+                res += 'DC'
+            } else if (d === 7) {
+                res += 'DCC'
+            } else if (d === 8) {
+                res += 'DCCC'
+            } else if (d === 9) {
+                res += 'CM'
+            }
+        } else if (num >= 10) {
+            d = Math.floor(num / 10)
+            num = num % 10
+            if (d === 1) {
+                res += 'X'
+            } else if (d === 2) {
+                res += 'XX'
+            } else if (d === 3) {
+                res += 'XXX'
+            } else if (d === 4) {
+                res += 'XL'
+            } else if (d === 5) {
+                res += 'L'
+            } else if (d === 6) {
+                res += 'LX'
+            } else if (d === 7) {
+                res += 'LXX'
+            } else if (d === 8) {
+                res += 'LXXX'
+            } else if (d === 9) {
+                res += 'XC'
+            }
+        } else if (num >= 1) {
+            d = num
+            if (d === 1) {
+                res += 'I'
+            } else if (d === 2) {
+                res += 'II'
+            } else if (d === 3) {
+                res += 'III'
+            } else if (d === 4) {
+                res += 'IV'
+            } else if (d === 5) {
+                res += 'V'
+            } else if (d === 6) {
+                res += 'VI'
+            } else if (d === 7) {
+                res += 'VII'
+            } else if (d === 8) {
+                res += 'VIII'
+            } else if (d === 9) {
+                res += 'IX'
+            }
+            num = 0
+        }
+    }
+    
+    return res
+};

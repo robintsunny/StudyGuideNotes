@@ -350,7 +350,7 @@ const maxArea = function (h) {
 Given an integer, convert it to a roman numeral. Input is 
 guaranteed to be within the range from 1 to 3999
 */
-var intToRoman = function(num) {
+const intToRoman = (num) => {
     let res = ''
     let d = 0
 
@@ -435,4 +435,37 @@ var intToRoman = function(num) {
     }
     
     return res
+};
+
+/*
+Given a roman numeral, convert it to an integer. Input is 
+guaranteed to be within the range from 1 to 3999. 
+*/
+
+const romanToInt = (s) => {
+    const romanToIntMapping = {
+        'I': 1,
+        'a': 4,
+        'V': 5,
+        'b': 9,
+        'X': 10,
+        'c': 40,
+        'L': 50,
+        'd': 90,
+        'C': 100,
+        'e': 400,
+        'D': 500,
+        'f': 900,
+        'M': 1000
+    }
+
+    return s
+        .replace('IV', 'a')
+        .replace('IX', 'b')
+        .replace('XL', 'c')
+        .replace('XC', 'd')
+        .replace('CD', 'e')
+        .replace('CM', 'f')
+        .split('')
+        .reduce((finalValue, currentValue) => finalValue + romanToIntMapping[currentValue], 0)
 };

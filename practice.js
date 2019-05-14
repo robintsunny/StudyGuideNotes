@@ -469,3 +469,31 @@ const romanToInt = (s) => {
         .split('')
         .reduce((finalValue, currentValue) => finalValue + romanToIntMapping[currentValue], 0)
 };
+
+
+/*
+Write a function to find the longest common prefix string 
+amongst an array of strings. If there is no common prefix, 
+return an empty string "".
+*/
+
+const longestCommonPrefix = (strs) => {
+
+    if (!strs.length) {
+        return ''
+    }
+
+    let res = ''
+    const first = strs[0]
+
+    for (let i = 0; i < first.length; i++) {
+        for (let j = 1; j < strs.length; j++) {
+            if (first[i] !== strs[j][i]) {
+                return res
+            }
+        }
+        res += first[i]
+    }
+
+    return res
+};

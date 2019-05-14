@@ -497,3 +497,40 @@ const longestCommonPrefix = (strs) => {
 
     return res
 };
+
+
+/* 
+Given an array nums of n integers, are there elements 
+a, b, c in nums such that a + b + c = 0? Find all unique 
+triplets in the array which gives the sum of zero.
+*/
+const threeSum = (nums) => {
+    const nums2 = nums.sort((a, b) => a - b)
+    const res = []
+    let last = [null, null, null]
+
+    for (let i = 0; i < nums2.length; i++) {
+        if (i !== 0 && nums2[i] === nums2[i-1]){
+            continue
+        }
+        for (let j = i + 1; j < nums2.length; j++) {
+            for (let k = j + 1; k < nums2.length; k++) {
+                const newLast = 
+                    nums2[i] !== last[0] ||
+                    nums2[j] !== last[1] ||
+                    nums2[k] !== last[2]
+                const sum = nums2[i] + nums2[j] + nums2[k] === 0;
+
+                if (sum && newLast) {
+                    res.push([nums2[i], nums2[j], nums2[k]])
+                    last = [nums2[i], nums2[j], nums2[k]];
+                }
+            }
+        }
+    }
+
+    return res
+
+};
+
+console.log(threeSum([-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6]))

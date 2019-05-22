@@ -533,4 +533,46 @@ const threeSum = (nums) => {
 
 };
 
-console.log(threeSum([-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6]))
+
+
+/* 
+Given a string containing digits from 2 - 9 inclusive, 
+return all possible letter combinations that the number 
+could represent.
+*/
+
+var letterCombinations = function(digits) {
+        const num = {
+            '1': [''],
+            '2': ['a', 'b', 'c'],
+            '3': ['d', 'e', 'f'],
+            '4': ['g', 'h', 'i'],
+            '5': ['j', 'k', 'l'],
+            '6': ['m', 'n', 'o'],
+            '7': ['p', 'q', 'r', 's'],
+            '8': ['t', 'u', 'v'],
+            '9': ['w', 'x', 'y', 'z'],
+            '0': ['']
+        }
+        
+    let queue = num[digits[0]];
+        let letters, itemFromQueue, queueLength;
+        
+        // iter over digits
+        // iter over res
+        // iter over letters
+        for (let i = 1; i < digits.length; i++){
+            queueLength = queue.length
+            letters = num[digits[i]]
+
+            for (let j =0; j<queueLength; j++) {
+                itemFromQueue = queue.shift()
+
+                for (k = 0; k<letters.length; k++){
+                    queue.push(`${itemFromQueue}${letters[k]}`)
+                }
+            }
+        }
+        console.log(queue)
+        return queue
+};

@@ -541,7 +541,7 @@ return all possible letter combinations that the number
 could represent.
 */
 
-var letterCombinations = function(digits) {
+const letterCombinations = (digits) => {
         const num = {
             '1': [''],
             '2': ['a', 'b', 'c'],
@@ -558,9 +558,6 @@ var letterCombinations = function(digits) {
     let queue = num[digits[0]];
         let letters, itemFromQueue, queueLength;
         
-        // iter over digits
-        // iter over res
-        // iter over letters
         for (let i = 1; i < digits.length; i++){
             queueLength = queue.length
             letters = num[digits[i]]
@@ -573,6 +570,6 @@ var letterCombinations = function(digits) {
                 }
             }
         }
-        console.log(queue)
+
         return queue
 };

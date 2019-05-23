@@ -579,3 +579,27 @@ const letterCombinations = (digits) => {
 Given a linked list, remove the n-th node from the end of 
 list and return its head.
 */
+
+const removeNthFromEnd = (head, n) => {
+
+    let first = head
+    let second = head
+    let i = 0
+
+
+    while (i < n) {
+        first = first.next
+        i++
+        if (!first) {
+            return []
+        }
+    }
+
+    while (first.next) {
+        first = first.next
+        second = second.next
+    }
+
+    second.next = second.next.next
+    return head
+};

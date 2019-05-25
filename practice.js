@@ -603,3 +603,45 @@ const removeNthFromEnd = (head, n) => {
     second.next = second.next.next
     return head
 };
+
+
+/* 
+Given a string containing just the characters '(', ')', 
+'{', '}', '[' and ']', determine if the input string is 
+valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+*/
+
+
+const isValidSlow = (s) => {
+    const res = []
+    const str = s.split('')
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === ')' && res[res.length - 1] !== '(') {
+            return false
+        } else if (str[i] === ']' && res[res.length - 1] !== '[') {
+            return false
+        } else if (str[i] === '}' && res[res.length - 1] !== '{') {
+            return false
+        } else if (str[i] === ')' && res[res.length - 1] === '(') {
+            res.pop()
+        } else if (str[i] === ']' && res[res.length - 1] === '[') {
+            res.pop()
+        } else if (str[i] === '}' && res[res.length - 1] === '{') {
+            res.pop()
+        } else {
+            res.push(str[i])
+        }
+
+
+        console.log(res)
+    }
+
+    return res.length === 0 ? true : false
+};

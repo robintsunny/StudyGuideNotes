@@ -619,29 +619,24 @@ Note that an empty string is also considered valid.
 
 
 const isValidSlow = (s) => {
-    const res = []
-    const str = s.split('')
+    const map = {
+        "(": ")",
+        "[": "]",
+        "{": "}"
+    }
+    const res = [];
 
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === ')' && res[res.length - 1] !== '(') {
-            return false
-        } else if (str[i] === ']' && res[res.length - 1] !== '[') {
-            return false
-        } else if (str[i] === '}' && res[res.length - 1] !== '{') {
-            return false
-        } else if (str[i] === ')' && res[res.length - 1] === '(') {
-            res.pop()
-        } else if (str[i] === ']' && res[res.length - 1] === '[') {
-            res.pop()
-        } else if (str[i] === '}' && res[res.length - 1] === '{') {
-            res.pop()
+    for (let i = 0; i < s.length; i++) {
+        const el = s[i];
+
+        if (map[el]) {
+            res.push(map[el]);
         } else {
-            res.push(str[i])
+            if (el !== res.pop()) {
+                return false;
+            }
         }
-
-
-        console.log(res)
     }
 
-    return res.length === 0 ? true : false
+    return res.length === 0;
 };
